@@ -1,7 +1,10 @@
+@media(min-width: 768px) and (max-width: 1388px)
+{
+
 html, body
 {
-    background-color : #290c50;
-    width: 800px;
+    background-color : #290c50;    
+    width: 70% ; /*800px; */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -11,7 +14,8 @@ html, body
 {  
     display: flex;
     flex-direction: row;
-    height: 125px;
+    height: 20%; /*125px;*/
+    
 }
 
 .ligne
@@ -28,15 +32,22 @@ nav
 {
     display: flex;
     flex-direction: row;
-    margin-left: 170px;
+    margin-left: 0% ;/*170px;*/
     list-style-type: none;
     padding: 0;
-    font-size: 17px;
+    font-size: 20% ;/* 17px;*/
+    margin-right: 5%;
 }
 
+#d_pmn{
+    width: auto;
+    float: left;
+    margin-right: 100%;
+
+}
 #pmn
 {
-    margin-left: 100px;
+    margin-left: 5%;/*100px; */
 }
 
 .ligne
@@ -77,7 +88,7 @@ nav
 li 
 {
     display: flex;
-    padding: 50px 40px;
+    padding:  50px 40px;
     text-decoration: none;
     text-decoration-line: none;
 }
@@ -85,25 +96,38 @@ li
 #texte
 {
     position: absolute;
-    top: 680px;
+   top: auto; 
+   width: auto;
+   height: auto;
+   font-size: auto;
+   color: white;
+   /*top: 680px;
     width: 700px;
     height: 150px;
     font-size: 400%;
     color: white;
     z-index: 2;
+    */
 }
 
 #texte::after
 {
-    content: ' ';
+   /* content: ' ';
     display: block;
     position: absolute;
-    top: 50px;
+    top: /* 50px;
     width: 700px;
     height: 175px;
     z-index: 1;
     opacity: 0.6;
-    background-color: black;
+    background-color: black; */
+    display: block;
+    position: absolute;
+    top: auto;
+    width: auto;
+    height: auto;
+    z-index: auto;
+    opacity: auto;
 }
 
 #texte2
@@ -222,4 +246,12 @@ button {
     nav.active {
         display: flex;
     }
-}
+
+@media (min-width:781px) and (max-width: 979px){
+    #d_pmn{
+        width: auto;
+        float: left;
+        margin-right: 100%;
+    }
+    }
+
